@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <table border="1">
+        <tbody>
+            <!-- 반복문 역할 ->  th:each    -->
+            <tr th:each="data: ${list}">
+                <!-- 반복문 역할 ->  th:each    -->
+                <td th:text="${data}"></td>
+            </tr>
+        </tbody>
+
+        <c:forEach var="data" items="${list}">
+            ${data}
+        </c:forEach>
+    </table>
+</body>
+</html>
